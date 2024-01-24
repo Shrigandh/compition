@@ -1,0 +1,55 @@
+.packages .box-container .box{
+    border:2px solid black;
+    box-shadow:var(--box-shadow);
+    background: rgb(143, 158, 229);
+    cursor: pointer;
+}
+
+.packages .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(20rem, 1fr));
+    gap:2rem;
+}
+
+.packages .box-container .box:hover .image img{
+    transform: scale(1.5);
+}
+
+.packages .box-container .box .image{
+    height:20rem;
+    overflow:hidden;
+}
+
+.packages .box-container .box:hover .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition: 2.0s linear;
+}
+
+.packages .box-container .box .content{
+    padding:2rem;
+    text-align:center;
+}
+
+.packages .box-container .box .content h3{
+    font-size:2.5rem;
+    color:black;
+}
+.packages .box-container .box .content p{
+    font-size: 20px;
+    color: grey;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+.btn{
+    font-size: 25px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
